@@ -1,0 +1,11 @@
+html
+    head
+        title='Laba1'
+    body
+        form(action='/v1/authorization', method='POST')
+            p
+              | Логин:
+              input(type='text', name='login', value='')
+              | Пароль:
+              input(type='password', name='password', value='')
+            input(type='submit', value='Submit')

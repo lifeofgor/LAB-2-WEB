@@ -1,0 +1,23 @@
+html
+    head
+        title='Laba1'
+    body
+        center
+            table(width='50%', cellspacing='1', cellpadding='1', border='1', bgcolor='#F2F2F2')
+                thead
+                    tr
+                        th id
+                        th Модель
+                        th Цена
+                        th Мощность
+                        th Описание
+                        th Марка
+                tbody
+                    each task in taskList
+                        tr
+                            td #{task.id}
+                            td #{task.model}
+                            td #{task.price}
+                            td #{task.power}
+                            td #{task.description}
+                            td #{task.brandName}
